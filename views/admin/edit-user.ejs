@@ -1,0 +1,14 @@
+<div class="admin_edit">
+    <h1>Edit User</h1>
+
+    <form action="" method="post">
+        <input type="name" name="name" value="<%= user.name%>" placeholder="Enter the name" />
+        <input type="email" name="email" value="<%= user.email%>" placeholder="Enter the email" />
+        <input type="mobile" name="mobile" value="<%= user.mobile%>" placeholder="Enter the mobile" />
+
+        <input type="hidden" name="id" value="<%= user._id%>" />
+        <input type="submit" value="Update User" />
+    </form>
+
+    <a href="/admin/dashboard">Go to Dashboard</a>
+</div>

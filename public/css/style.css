@@ -1,0 +1,731 @@
+/* Reset and global styles */
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+}
+body {
+    background: url("./image/3d-rendering-abstract-black-white-geometric-background.jpg") no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Center container styles */
+.center-all {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+/* Form container */
+.vertical {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+/* Heading style */
+.vertical h1 {
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #ffffff;
+    text-align: center;
+}
+
+/* Form input styles */
+.vertical input[type="text"],
+.vertical input[type="password"] {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+/* Placeholder text style */
+.vertical input[type="text"]::placeholder,
+.vertical input[type="password"]::placeholder {
+    color: rgba(255, 255, 255, 0.6); /* Light gray for placeholder */
+}
+
+/* Input focus effect */
+.vertical input[type="text"]:focus,
+.vertical input[type="password"]:focus {
+    border-color: rgba(255, 255, 255, 0.4);
+}
+
+/* Submit button style */
+.vertical input[type="submit"] {
+    width: 100%;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 8px;
+    background: #1e90ff;
+    color: #ffffff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+/* Button hover effect */
+.vertical input[type="submit"]:hover {
+    background: #1c86ee;
+}
+
+/* Message styles */
+.vertical h4 {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    color: #ff6b6b;
+    text-align: center;
+}
+
+/* Subtle text style for links or additional text */
+.vertical p {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #ffffff;
+    text-align: center;
+    opacity: 0.8;
+}
+
+.txt{
+    color: white;
+}
+.atag{
+    color: #b29be3;
+}
+
+/* home page */
+Home page container / .home {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 2rem;
+    margin: 2rem;
+    color: #f0f0f0; /* Light gray for text */
+    font-family: "Arial", sans-serif;
+}
+
+/* Welcome heading */
+.home h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #ffffff; /* White for the heading */
+}
+
+/* User info styling */
+.home h4 {
+    font-size: 1.2rem;
+    margin: 0.2rem 0;
+    margin-bottom: 1.5rem;
+    color: #e0e0e0; /* Lighter gray for user info */
+}
+
+/* Edit link styling */
+.home a[href*="edit-info"] {
+    margin-top: 1rem;
+    margin-right: 1rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid #5ea0f2; /* Light blue border */
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1rem;
+    color: #5ea0f2; /* Light blue text */
+    background-color: transparent;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect for Edit link */
+.home a[href*="edit-info"]:hover {
+    background-color: #5ea0f2;
+    color: #ffffff; /* White text on hover */
+}
+
+/* Logout link styling */
+.home a[href*="logout"] {
+    margin-top: 0.5rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid #f28b8b; /* Light red border */
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1rem;
+    color: #33d733; /* Light red text */
+    background-color: transparent;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect for Logout link */
+.home a[href*="logout"]:hover {
+    background-color: #f28b8b;
+    color: #ffffff; /* White text on hover */
+}
+
+/* Dashboard link styling */
+.home a[href*="dashboard"] {
+    margin-top: 1rem;
+    margin-right: 1rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid #5ea0f2; /* Light blue border */
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1rem;
+    color: #5ea0f2; /* Light blue text */
+    background-color: transparent;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect for Dashboard link */
+.home a[href*="dashboard"]:hover {
+    background-color: #5ea0f2;
+    color: #ffffff; /* White text on hover */
+}
+
+/* Spacing between elements */
+.home h4 + h4 {
+    margin-top: 0.3rem;
+}
+
+/* Edit page container */
+.edit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    margin: 2rem;
+    color: #f0f0f0; /* Light gray for text */
+    font-family: "Arial", sans-serif;
+}
+
+/* Edit heading */
+.edit h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #ffffff; /* White for the heading */
+}
+
+/* Form styling */
+.edit form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px; /* Center the form with max width */
+}
+
+/* Input fields styling */
+.edit form input[type="name"],
+.edit form input[type="email"],
+.edit form input[type="mobile"] {
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #5ea0f2; /* Light blue border */
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent input background */
+    color: #f0f0f0; /* Light gray text */
+}
+
+/* Placeholder text styling */
+.edit form input::placeholder {
+    color: #d3d3d3; /* Light placeholder color */
+}
+
+/* Update button styling */
+.edit form input[type="submit"] {
+    padding: 0.8rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #5ea0f2; /* Light blue button */
+    color: #ffffff; /* White text */
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+/* Hover effect for Update button */
+.edit form input[type="submit"]:hover {
+    background-color: #82b1ff; /* Slightly lighter blue on hover */
+}
+
+/* Dashboard link styling */
+.edit a[href*="home"] {
+    position: fixed;
+    top: 2rem;
+    left: 2rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid #f0f0f0; /* Light gray border */
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1rem;
+    color: #f0f0f0; /* Light gray text */
+    background-color: transparent;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect for Dashboard link */
+.edit a[href*="home"]:hover {
+    background-color: #f0f0f0;
+    color: #333333; /* Darker text on hover */
+}
+
+.register {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+    margin: 2rem;
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent white for glass effect */
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37); /* Soft shadow */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18); /* Light border for extra glass effect */
+}
+
+/* Heading style */
+.register h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #ffffff; /* White heading text */
+}
+
+/* Form styling */
+.register form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px; /* Center the form with max width */
+}
+
+/* Input fields styling */
+.register form input[type="text"],
+.register form input[type="email"],
+.register form input[type="password"] {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Semi-transparent border */
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.2); /* Light glass-like background */
+    color: #ffffff; /* White text color */
+}
+
+/* Placeholder text styling */
+.register form input::placeholder {
+    color: rgba(255, 255, 255, 0.7); /* Light placeholder color */
+}
+
+/* Register button styling */
+.register form input[type="submit"] {
+    padding: 1rem;
+    border: none;
+    border-radius: 8px;
+    background-color: rgba(94, 160, 242, 0.8); /* Light blue, semi-transparent button */
+    color: #ffffff; /* White text */
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+/* Hover effect for Register button */
+.register form input[type="submit"]:hover {
+    background-color: rgba(130, 177, 255, 0.8); /* Slightly lighter blue on hover */
+}
+
+/* Message display styling */
+.register h4 {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    color: #ffdddd; /* Light red for error/success messages */
+}
+
+.admin_login {
+    background-color: transparent; /* Semi-transparent white */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    text-align: center;
+    border: solid #ffffff 1px;
+}
+
+.admin_login h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.admin_login h4 {
+    font-size: 14px;
+    color: #e74c3c;
+    margin-bottom: 15px;
+}
+
+.admin_login form {
+    display: flex;
+    flex-direction: column;
+}
+
+.admin_login input[type="email"],
+.admin_login input[type="password"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #ffffff;
+    background-color: transparent;
+}
+
+.admin_login input[type="submit"] {
+    padding: 10px;
+    background-color: transparent;
+    border: solid #B47334 1px;
+    border-radius: 4px;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.admin_login input[type="submit"]:hover {
+    background-color: #B47334;
+}
+
+
+/* Admin Dashboard Styling */
+.admin_dashboard {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    padding: 2rem;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* Heading styling */
+.admin_dashboard h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+/* Form styling */
+.admin_dashboard form {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.admin_dashboard input[type="search"] {
+    padding: 0.75rem;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+.admin_dashboard input[type="search"]::placeholder {
+    color: rgba(255, 255, 255, 0.644);
+}
+
+.admin_dashboard input[type="submit"] {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.admin_dashboard input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Link styling */
+.admin_dashboard a {
+    color: #007bff;
+    text-decoration: none;
+    margin-right: 1rem;
+}
+
+.admin_dashboard a:hover {
+    text-decoration: underline;
+}
+
+/* Table styling */
+.admin_dashboard table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0.5rem;
+    margin-top: 2rem;
+}
+
+.admin_dashboard th,
+.admin_dashboard td {
+    padding: 1rem;
+    text-align: left;
+}
+
+.admin_dashboard thead th {
+    background-color: #333;
+    color: #fff;
+    border: none;
+}
+
+.admin_dashboard tbody tr {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.admin_dashboard tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.admin_dashboard td a {
+    color: #77b1ee;
+    text-decoration: none;
+    margin-right: 0.5rem;
+}
+
+.admin_dashboard td a:hover {
+    text-decoration: underline;
+    color: #0b2b4e;
+}
+
+/* Admin Edit Page Styling */
+.admin_edit {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    padding: 2rem;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+/* Heading styling */
+.admin_edit h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+/* Form styling */
+.admin_edit form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+.admin_edit input[type="text"],
+.admin_edit input[type="email"],
+.admin_edit input[type="mobile"],
+.admin_edit input[type="password"] {
+    padding: 0.75rem;
+
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+.admin_edit input[type="submit"] {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.admin_edit input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Link styling */
+.admin_edit a {
+    display: inline-block;
+    margin-top: 1rem;
+    color: #007bff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.admin_edit a:hover {
+    text-decoration: underline;
+}
+
+/* Admin Edit Page Styling */
+.admin_edit {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    padding: 4rem;
+    margin: 0 auto;
+    max-width: 1000px; /* Increased width for a larger container */
+    background-color: rgba(255, 255, 255, 0.1); /* Optional: Background for entire container */
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* More pronounced shadow */
+}
+
+/* Heading styling */
+.admin_edit h1 {
+    font-size: 2.5rem; /* Larger heading */
+    margin-bottom: 2rem; /* Increased margin for better spacing */
+    color: #fff;
+    text-align: center; /* Center align heading */
+}
+
+/* Form styling */
+.admin_edit form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem; /* Increased gap for better spacing between form elements */
+}
+
+/* Input fields styling */
+.admin_edit input[type="name"],
+.admin_edit input[type="email"],
+.admin_edit input[type="mobile"],
+.admin_edit input[type="password"] {
+    padding: 1rem; /* Larger padding for better usability */
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.2); /* Light background for input fields */
+    color: #fff;
+    font-size: 1rem; /* Larger text for better readability */
+}
+
+/* Submit button styling */
+.admin_edit input[type="submit"] {
+    padding: 1rem 2rem; /* Larger padding for better button appearance */
+    border: none;
+    border-radius: 8px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.1rem; /* Larger font size for the button */
+}
+
+.admin_edit input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Link styling */
+.admin_edit a {
+    display: block;
+    margin-top: 2rem; /* Increased margin for better spacing from the form */
+    color: #007bff;
+    text-decoration: none;
+    font-size: 1.1rem; /* Larger font size for better readability */
+    text-align: center; /* Center align link */
+}
+
+.admin_edit a:hover {
+    text-decoration: underline;
+}
+
+/* Add User Page Styling */
+.add_user {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    padding: 4rem;
+    margin: 0 auto;
+    max-width: 1000px; /* Larger container width */
+    background-color: rgba(255, 255, 255, 0.1); /* Optional: light background for contrast */
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+}
+
+/* Heading styling */
+.add_user h1 {
+    font-size: 2.5rem; /* Larger font size */
+    margin-bottom: 2rem; /* Space between heading and form */
+    color: #fff;
+    text-align: center;
+}
+
+/* Form styling */
+.add_user form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem; /* Spacing between form elements */
+}
+
+/* Input fields styling */
+.add_user input[type="text"],
+.add_user input[type="email"],
+.add_user input[type="password"] {
+    padding: 1rem; /* Comfortable padding */
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.2); /* Light background for inputs */
+    color: #fff;
+    font-size: 1rem;
+}
+.add_user input::placeholder {
+    color: white;
+}
+
+/* Submit button styling */
+.add_user input[type="submit"] {
+    padding: 1rem 2rem; /* Larger padding for better button appearance */
+    border: none;
+    border-radius: 8px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.add_user input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Message styling */
+.add_user p {
+    color: red;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+/* Link styling */
+.add_user a {
+    display: block;
+    margin-top: 2rem; /* Space between link and other elements */
+    color: #007bff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.add_user a:hover {
+    text-decoration: underline;
+}

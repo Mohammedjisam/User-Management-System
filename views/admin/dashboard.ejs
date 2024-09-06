@@ -1,0 +1,46 @@
+<div class="admin_dashboard">
+    <h1>Dashboard</h1>
+
+    <form method="post">
+        <input type="search" name="searchItem" placeholder="search here" />
+        <input type="submit" value="Search User" />
+    </form>
+
+    <a href="/admin/new-user">Add New User</a>
+
+    <table
+        width="50%"
+        border="1"
+        cellspacing="0"
+        cellpadding="10"
+        style="margin: 20px auto; border-collapse: collapse; font-family: Arial, sans-serif"
+    >
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone No</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% if(users && users.length > 0) { for(let i = 0; i < users.length; i++) { %>
+            <tr>
+                <td><%= users[i].name %></td>
+                <td><%= users[i].email %></td>
+                <td><%= users[i].mobile %></td>
+                <td>
+                    <a href="/admin/edit-user?id=<%= users[i]._id %>">Edit</a>
+                    <a href="/admin/delete-user?id=<%= users[i]._id %>">Delete</a>
+                </td>
+            </tr>
+            <% } } else { %>
+            <tr>
+                <td colspan="3">Users not found</td>
+            </tr>
+            <% } %>
+        </tbody>
+    </table>
+
+    <a href="/admin/home">Home</a>
+</div>

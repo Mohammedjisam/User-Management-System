@@ -1,0 +1,16 @@
+<div class="center-all">
+    <div class="vertical">
+        <h1>Login Page</h1>
+
+        <% if (typeof message !== "undefined") { %>
+        <h4><%= message %></h4>
+        <% } %>
+
+        <form action="/login" method="post">
+            <input type="text" name="email" required placeholder="Enter Email" />
+            <input type="password" name="password" required placeholder="Enter password" />
+            <input type="submit" value="Login" />
+        </form>
+        <p class="txt" >New User? <a class="atag" href="/register">register</a></p>
+    </div>
+</div>
